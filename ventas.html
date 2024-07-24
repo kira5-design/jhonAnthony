@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Venta de Equipos de Cómputo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container input[type="text"],
+        .form-container select,
+        .form-container input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registro de Venta de Equipos de Cómputo</h2>
+    <form>
+        <label for="nombre">Nombre del Cliente</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre del Cliente">
+
+        <label for="tipo">Tipo de Equipo</label>
+        <select id="tipo" name="tipo">
+            <option value="laptop">Laptop</option>
+            <option value="desktop">Desktop</option>
+            <option value="tablet">Tablet</option>
+        </select>
+
+        <label for="marca">Marca</label>
+        <input type="text" id="marca" name="marca" placeholder="Marca">
+
+        <label for="modelo">Modelo</label>
+        <input type="text" id="modelo" name="modelo" placeholder="Modelo">
+
+        <label for="precio">Precio</label>
+        <input type="text" id="precio" name="precio" placeholder="Precio">
+
+        <label for="fecha">Fecha de Venta</label>
+        <input type="date" id="fecha" name="fecha">
+
+        <button type="submit">Registrar Venta</button>
+    </form>
+</div>
+
+</body>
+</html>
